@@ -1,4 +1,4 @@
-/*
+
 //palindrome 
 class Solution {
     public boolean isPalindrome(int x) {
@@ -39,10 +39,20 @@ class Solution {
     }
 }
 
-*/
+//==================================================================================
  
+//  This code is a solution to determine whether an integer is a palindrome.
 
-palindrome
+// It converts the input integer to a string using the String.valueOf(x) method.
+// It declares two variables i and j, and initializes i to 0 and j to the last index of the string.
+// It uses a while loop that runs until i is less than or equal to j.
+// Inside the while loop, it compares the characters at indices i and j of the string, if they are not equal, it returns false, indicating that the number is not a palindrome.
+// If the characters are equal, it increments i and decrements j.
+// After the while loop, if it didn't return false, it means that the number is a palindrome, so it returns true.
+// This solution uses the two-pointer approach, where two pointers are pointing to opposite sides of the string and moving towards the middle, comparing the characters at each step. If all the characters are equal on both sides, it means that the number is a palindrome.
+
+
+//palindrome, not the question from leetCode
 
  public class java {
     public static void main(String[] args) {

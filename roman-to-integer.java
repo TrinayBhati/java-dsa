@@ -24,3 +24,14 @@ class Solution {
         return result;
     }
 }
+
+//=======================================================================
+
+// This code is a solution to convert a Roman numeral to an integer.
+
+// It creates a HashMap, myMap, that maps Roman numerals to their corresponding integer values using the put() method.
+// It assigns the last character of the input string, s, to the variable ch, and gets the corresponding integer value from the myMap using the get() method, and assigns it to the variable result.
+// It uses a for loop to iterate through the input string, s, starting from the second-last character and going backwards.
+// Inside the loop, it checks if the current character's integer value is less than the next character's integer value, if it is, it substract the current character's integer value from the result, otherwise it adds it.
+// After the loop, it returns the result which is the converted integer of the Roman Numeral
+// This solution is based on the Roman numeral's subtraction rule, where if a smaller numeral is before a larger numeral, it is subtracted from the larger numeral.

@@ -44,3 +44,16 @@ class Solution {
             }
     }
 }
+
+//================================================================
+
+// This code is a solution to find the longest common prefix among a group of strings.
+
+// First, it checks if the input array of strings is null or empty. If it is, it returns an empty string.
+// Then it sorts the input array of strings alphabetically using the sort() method from the Arrays class
+// Next, it assigns the first element of the sorted array to the variable first and the last element of the sorted array to the variable last.
+// It then declares a variable c and initializes it to 0.
+// Then it uses a while loop to iterate through the first element of the input array.
+// Inside the while loop, it checks if the character at index c in both the first and last element of the sorted array is the same. If it is, it increments the value of c. If it's not, it breaks out of the loop.
+// Next it checks if the value of c is 0, If it is, it returns an empty string, else it returns the substring of the first element from index 0 to c.
+// This solution is not the best one as it only works with the given test cases and can't guarantee a good result for all the test cases.
