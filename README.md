@@ -27,4 +27,4 @@ If you want to contribute to this repository, feel free to submit a pull request
 
 ## Author
 
-- **Trinay Bhati** - [TrinayBhati] (https://github.com/TrinayBhati)
+- **Trinay Bhati**  - [TrinayBhati](https://github.com/TrinayBhati)
