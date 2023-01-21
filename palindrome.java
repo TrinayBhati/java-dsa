@@ -12,6 +12,8 @@ class Solution {
         // Step4: Update the variables.
 
         String s = String.valueOf(x);  // convert integer to string.
+        
+        // String str = Integer.toString(x);
 
         int i = 0;                     // i will initially point to first index.
         int j = s.length() - 1;        // j will initially point to last index. 
