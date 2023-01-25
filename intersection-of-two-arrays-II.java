@@ -41,6 +41,28 @@ class Solution {
     // solution using hashmap
 
     public int[] intersect(int[] nums1, int[] nums2) {
-        
+         HashMap<Integer, Integer> myMap = new HashMap<>();
+        for(int num : nums1){ 
+            myMap.put(num, myMap.getOrDefault(num, 0) +1);
+        }
+        List<Integer> myList = new ArrayList<>();
+        for(int num : nums2){
+            if(myMap.containsKey(num) && myMap.get(num) >0){
+    myList.add(num);
+    myMap.put(num, myMap.get(num)-1);
+    }
+        }
+        int[] res = new int[myList.size()];
+        for(int i = 0; i< myList.size(); i++){
+            res[i] = myList.get(i);
+        }
+        return res;
+
     }
 }
+
+//==============================================================
+// Create a hashmap to store the frequency of each element in the first array nums1.
+// Iterate through the second array nums2, and for each element, check if it exists in the hashmap and its frequency is greater than 0. If it does, add the element to the result array, decrement its frequency in the hashmap and continue.
+// Create a new integer array res with the same size as the result list and copy elements from the result list to the res array.
+// Return the res array
