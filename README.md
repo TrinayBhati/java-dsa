@@ -5,6 +5,7 @@ This repository contains my solutions to various Leetcode problems, all implemen
 ## Problem List
 
 The repository is organized by problem names,each problem has a corresponding solution class.
+just search the name of the file on google.
 
 ## Getting Started
 
