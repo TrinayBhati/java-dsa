@@ -6,7 +6,8 @@ public class Solution extends VersionControl {
         int f = 1; 
         int l = n;
         while(f<l){
-            int mid = (f+l)/2; // always use f + (l-f)/2 
+            int mid = (f+l)/2;
+                 // always use f + (l-f)/2 
             if(isBadVersion(mid)){
                 l = mid;
             }
