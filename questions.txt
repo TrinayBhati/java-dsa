@@ -1,0 +1,85 @@
+=====================ARRAYS=====================
+
+1. Find the maximum and minimum element in an array.
+2. Reverse an array.
+3. Rotate an array to the right by k elements.
+4. Find the majority element in an array.
+5. Check if two arrays are equal or not.
+6. Merge two sorted arrays into a single sorted array.
+7. Find the second largest element in an array.
+8. Search an element in a sorted and rotated array.
+9. Find the subarray with the maximum sum.
+10. Find the transpose of a matrix.
+11. Find the second largest element in an array of integers.
+12. Given an array of integers, rearrange the elements in such a way that all the negative elements appear before all the positive elements.
+13. Find the minimum and maximum element in an array of integers.
+14. Given an array of integers, find the subarray with the maximum sum.
+15. Given two arrays of integers, find a pair of elements (one from each array) whose sum is closest to a given target value.
+16. Rotate an array of n elements to the right by k steps.
+17. Given an array of integers, find the kth largest element in the array.
+18. Given an array of integers, move all the zeros to the end of the array while maintaining the relative order of the other elements.
+19. Given an array of integers, find the length of the longest increasing subsequence.
+20. Given an array of integers, find the median of the array.
+21. Write a Java program to find the kth smallest element in an array.
+22. Write a Java program to find the contiguous subarray with the maximum sum in an array.
+23. Write a Java program to find the maximum sum submatrix in a 2D array.
+24. Write a Java program to find the element that appears more than n/2 times in an array.
+25. Write a Java program to find the shortest distance from a source cell to a destination cell in a 2D array.
+26. Write a Java program to find the maximum product of any three elements in an array.
+27. Write a Java program to find the largest rectangle containing only 1's in a binary matrix.
+28. Write a Java program to find the median of two sorted arrays.
+29. Write a Java program to count the number of inversion pairs in an array.
+30. Write a Java program to find the smallest missing positive number in an unsorted array.
+31. Given an array of integers, find the kth smallest element in the array using quickselect algorithm.
+32. Given an array of integers, find the contiguous subarray with the maximum sum using Kadane's algorithm.
+33. Given a matrix of integers, rotate it by 90 degrees clockwise.
+34. Given a matrix of integers, find the path with the maximum sum from the top row to the bottom row, where each step can only move to the adjacent cells in the next row.
+35. Given an array of integers, find the smallest subarray with sum greater than or equal to a given value.
+36. Given an array of integers, find the longest subarray with sum divisible by a given value.
+37. Given an array of integers, find the length of the longest subarray with equal number of 0's and 1's.
+38. Given a matrix of integers, find the largest square submatrix with all elements equal.
+39. Given a matrix of integers, find the longest increasing path in the matrix.
+40. Given an array of integers, rearrange the elements in such a way that all the even elements appear before all the odd elements, and the order of even and odd elements remains the same.
+
+=======Corresponding LeetCode questions=======
+
+1. (Leetcode #215) Find the Kth largest element in an array.
+2. (Leetcode #189) Rotate Array
+3. (Leetcode #238) Product of Array Except Self
+4. (Leetcode #169) Majority Element
+5. (Leetcode #1) Two Sum
+6. (Leetcode #88) Merge Sorted Array
+7. (Leetcode #217) Contains Duplicate
+8. (Leetcode #283) Move Zeroes
+9. (Leetcode #53) Maximum Subarray
+10. (Leetcode #48) Rotate Image
+11. (Leetcode #414) Third Maximum Number
+12. (Leetcode #75) Sort Colors
+13. (Leetcode #694) Number of Distinct Islands
+14. (Leetcode #238) Product of Array Except Self
+15. (Leetcode #167) Two Sum II - Input array is sorted
+16. (Leetcode #189) Rotate Array
+17. (Leetcode #215) Kth Largest Element in an Array
+18. (Leetcode #347) Top K Frequent Elements
+19. (Leetcode #300) Longest Increasing Subsequence
+20. (Leetcode #4) Median of Two Sorted Arrays
+21. (Leetcode #215) Kth Largest Element in an Array
+22. (Leetcode #53) Maximum Subarray
+23. (Leetcode #363) Max Sum of Rectangle No Larger Than K
+24. (Leetcode #169) Majority Element
+25. (Leetcode #542) 01 Matrix
+26. (Leetcode #628) Maximum Product of Three Numbers
+27. (Leetcode #85) Maximal Rectangle
+28. (Leetcode #4) Median of Two Sorted Arrays
+29. (Leetcode #493) Reverse Pairs
+30. (Leetcode #41) First Missing Positive
+31. (Leetcode #215) Kth Largest Element in an Array
+32. (Leetcode #53) Maximum Subarray
+33. (Leetcode #48) Rotate Image
+34. (Leetcode #64) Minimum Path Sum
+35. (Leetcode #209) Minimum Size Subarray Sum
+36. (Leetcode #974) Subarray Sums Divisible by K
+37. (Leetcode #525) Contiguous Array
+38. (Leetcode #221) Maximal Square
+39. (Leetcode #329) Longest Increasing Path in a Matrix
+40. (Leetcode #905) Sort Array By Parity
