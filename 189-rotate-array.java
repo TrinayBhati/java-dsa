@@ -13,11 +13,11 @@ class Solution {
     public void rotate(int[] nums, int k) {
         k %= nums.length;
         // to handle the cases where k is greater than nums.length
-                         /*k %= nums.length;  // handle k values that are greater than nums.length or negative
-                        if (k < 0) {
-                            k += nums.length;
-                        }
-                        // here we handle the negative cases as well*/
+         /*k %= nums.length;  // handle k values that are greater than nums.length or negative
+        if (k < 0) {
+            k += nums.length;
+        }
+        // here we handle the negative cases as well*/
 
         reverse( nums , 0 ,nums.length - k - 1);
         reverse(nums, nums.length -k , nums.length-1);
@@ -39,3 +39,21 @@ class Solution {
 // The final step is to reverse the entire array. After performing this operation, the array becomes [5, 6, 7, 1, 2, 3, 4], which is the rotated array.
 
 // The reason why this works is because reversing the first n-k elements and the last k elements effectively shifts them to the end of the array, while reversing the entire array brings the elements in the desired order.
+
+//============================================================
+
+// reverse an array 
+
+class Solution{
+    public static void reverse(int[] arr) {
+        int i = 0;
+        int j = arr.length -1;
+        while(i<j){
+            temp = arr[i];
+            arr[i] = arrr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+}
