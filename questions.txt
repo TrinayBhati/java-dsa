@@ -2,8 +2,8 @@
 
 1. Find the maximum and minimum element in an array. ✅
 2. Reverse an array.✅
-3. Rotate an array to the right by k elements.
-4. Find the majority element in an array.
+3. Rotate an array to the right by k elements.✅
+4. Find the majority element in an array.✅
 5. Check if two arrays are equal or not.
 6. Merge two sorted arrays into a single sorted array.
 7. Find the second largest element in an array.
@@ -43,10 +43,10 @@
 
 =======Corresponding LeetCode questions=======
 
-1. (Leetcode #215) Find the Kth largest element in an array.
-2. (Leetcode #189) Rotate Array
+1. (Leetcode #215) Find the Kth largest element in an array.✅
+2. (Leetcode #189) Rotate Array ✅
 3. (Leetcode #238) Product of Array Except Self
-4. (Leetcode #169) Majority Element
+4. (Leetcode #169) Majority Element ✅
 5. (Leetcode #1) Two Sum
 6. (Leetcode #88) Merge Sorted Array
 7. (Leetcode #217) Contains Duplicate
