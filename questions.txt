@@ -56,8 +56,8 @@
 11. (Leetcode #414) Third Maximum Number
 12. (Leetcode #75) Sort Colors
 13. (Leetcode #694) Number of Distinct Islands
-14. (Leetcode #238) Product of Array Except Self
-15. (Leetcode #167) Two Sum II - Input array is sorted
+14. (Leetcode #238) Product of Array Except Self  
+15. (Leetcode #167) Two Sum II - Input array is sor ted
 16. (Leetcode #189) Rotate Array
 17. (Leetcode #215) Kth Largest Element in an Array
 18. (Leetcode #347) Top K Frequent Elements
