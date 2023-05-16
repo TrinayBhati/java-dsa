@@ -1,6 +1,6 @@
-/*
-	 Rotate an array to the right by k elements.
-	 
+
+/*	 
+	// Rotate an array to the right by k elements.
 class solution{
 	public static void rotate(arr[] num , int k) {
 		int n = num.length;
@@ -94,5 +94,48 @@ class solution{
 	public static void main(String[] args) {
 		int arr[] = {1, 23, 43, 2, 5, 88, 9, 906, 752};
 			sorting(arr);
+	}
+}*/
+
+/*class Selection{
+	public static int[] sort(int arr[]){
+		int n = arr.length;
+		for(int i = 0; i< n-1 ; i++){
+			int smallest = i;
+			for(int j = i+1; j<n ; j++){
+				if(arr[j]<arr[smallest]){
+					smallest = j;
+				}
+			}
+			int temp = arr[i];
+			arr[i] = arr[smallest];
+			arr[smallest] = temp;
+		}
+		return arr;
+	}
+	public static void main(String[] args) {
+		int arr[] = {1, 23, 43, 2, 5, 88, 9, 906, 752};
+		int sortedArr[] = sort[arr];
+		System.out.println(Arrays.toString(sortedArr));
+	}
+}*/
+
+/*class Insertion{
+	public static int[] sort(int arr[]){
+		int n = arr.length;
+		for(int i = 1; i< n ; i++){
+			int current = i;
+			int j = i-1;
+			while(j<= 0 && arr[current]<arr[j]){
+				arr[j+1] = arr[j];
+				j--;
+			}
+			arr[j+1] = arr[current];
+		}
+		return arr;
+	}
+	public static void main(String[] args) {
+		int arr[] = {1, 23, 43, 2, 5, 88, 9, 906, 75};
+		sort(arr);
 	}
 }*/
