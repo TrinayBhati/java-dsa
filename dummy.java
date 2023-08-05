@@ -139,3 +139,35 @@ class solution{
 		sort(arr);
 	}
 }*/
+
+public static int[] sym(int arr[], int brr[]){
+	int count = 0; 
+	int m = arr.length;
+	int n = brr.length;
+	boolean[] checked = new boolean[arr2.length];
+
+	for(int i = 0; i<m ; i++){
+		boolean flag = false;
+		for(int  j = 0 ; j< n ; j++){
+			if(arr[i] == brr[j] && !checked[j]){
+				checked[j] = true;
+				flag = true;
+				count++;
+				break;
+			}
+		}
+	}
+
+	int set[] = new int[count];
+	int i = 0;
+	for(int j = 0 ; j<arr2.length ; j++){
+		if(checked[j]){
+			set[i++] = arr2[j];
+		}
+	} 
+	return set;
+}
+
+public static void main(String[] args) {
+	sym([1, 2, 3], [5, 2, 1, 4]);
+}
