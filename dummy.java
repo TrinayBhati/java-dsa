@@ -17,6 +17,9 @@
 // 	}
 // }
 
+
+
+
 // class Binary{
 // 	public static boolean isSorted(int arr[]){
 // 		for(int i = 0; i<arr.length-1; i++){
@@ -58,6 +61,10 @@
 // 	}
 // }
 
+
+
+
+
 // class Linear{
 // 	public static int search(int arr[], int x){
 // 		int n = arr.length;
@@ -74,6 +81,8 @@
 // 		System.out.println(search(arr, x));
 // 	}
 // }
+
+
 
 // class BubbleSort{
 
@@ -95,6 +104,8 @@
 // 			sorting(arr);
 // 	}
 // }
+
+
 
 // class Selection{
 // 	public static int[] sort(int arr[]){
@@ -120,6 +131,7 @@
 // }
 
 
+
 // class Insertion{
 // 	public static int[] sort(int arr[]){
 // 		int n = arr.length;
@@ -139,6 +151,7 @@
 // 		sort(arr);
 // 	}
 // }
+
 
 
 // class Solution{
@@ -212,6 +225,7 @@
 
 
 
+
 // class SumOfArray{
 // 	public static void main(String[] args) {
 		
@@ -226,6 +240,7 @@
 // 		System.out.println(sum);
 // 	}
 // }
+
 
 
 //Problem 1: Given an integer array nums, return the third distinct maximum number in this array. If the third maximum
@@ -334,115 +349,47 @@
 // 	}
 // }
 
-/////=========================================================
+// ============================== 6-oct ===================================
 
 
-1. 3 Sum
-2. Find only unique elements from these 2 arary .
-[ 1, 45, 5 ,7, 9 , 5]
-
-[ 2,1,5,6,1,9 ]
-Output: [2, 6, 7, 45]
-3. Given an array of integers arr[] of size N and an integer, the task is to rotate the array elements to the left by d positions.
-
-Examples:  
-
-Input: 
-arr[] = {1, 2, 3, 4, 5, 6, 7}, d = 2
-Output: 3 4 5 6 7 1 2
-4. Write a program to print the kth smallest element in array
-Input:
-N = 6
-arr[] = 7 10 4 3 20 15
-K = 3
-Output : 7
-5. Count Subarrays with LCM equals K
-6. Finding Pivot Integer
-7. Given a 2D array, print it in spiral form.
-8. Write an efficient program for printing K largest elements in an array. Elements in an array can be in any order. Print the elements in decreasing order 
-==============
-
-2. arr[]= {9,6,7,3,1,5} sort this array with the help of bubble sort.
-
-================
-1)
-
--> Not Answered
-
-2) Write a program to sort an array
-->Not Answered
-
-3) Write a program to find whether the number is prime or not 
--> Answered
-
-4) Mention some difference between linear search and Binary Search  (Answered)
-
-5) Explain about Hashing (Not Clear)
-
-======================
-1. 
-2. 
-
-======
+// 2 sum
+// class Solution {
+//     public int[] twoSum(int[] nums, int target) {
+        
+//         int sum[] = new int[2];
+//         int n = nums.length;
+//         for(int i = 0 ; i< n ; i++){
+//             for(int j = i+1 ; j< n ; j++){
+//                 if(nums[i] + nums[j] == target){
+//                     sum[0] = i;
+//                     sum[1] = j; 
+//                 }
+//             }   
+//         }
+//         return sum;
+//     }
+// }
 
 
-
-========================
-1- Advantages and Disadvantage of Array. 
-2- Linear Search VS Binary Search.
-Task 3 :- First and Last Position of an Element in a Sorted Array :- https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-Task 4:- Print Sum of Diagonals of a 2D matrix :- https://leetcode.com/problems/matrix-diagonal-sum/
-
-
-===============
-1) Explain about binary search
--> answered
-
-2) Explain about linked list
--> Answered
-
-3) print the min value in the stack when popping along with the popping element
-ex=> 
-input
-6
-8 5 3 1 2 3
-output
-3:1
-2:1
-1:1
-3:3
-5:5
-8:8
-
--> Not Answered
-
-4) Given an array arr[] of non-negative integers and an integer sum, find a subarray that adds to a given sum.
-Note: There may be more than one subarray with sum as the given sum, print first such subarray. 
-Examples: 
-Input: arr[] = {1, 4, 20, 3, 10, 5}, sum = 33
-Output: Sum found between indexes 2 and 4
-Explanation: Sum of elements between indices 2 and 4 is 20 + 3 + 10 = 33
-
--> Not Answered
-
-5) provide output for below code snippets
-*    int[] a=new int[5];
-	for(int i=0;i<a.length;i++)
-	{
-	  System.out.println(a[i]);
+class Solution{
+	public static void main(String[] args) {
+		int arr[] = {1,2,3,5,2,7,8,9,112};
+		System.out.println(maxMin(arr))
 	}
--> Answered
-* System.out.print(""+1+1)
--> Wrong Answered
-* System.out.print("1"+1+1)
--> Wrongly Answered
+	public static int maxMin(int[] arr){
+		int n = arr.length;
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
 
-6) Explain about to implement queue using Stack
--> Not Answered
+		for(int i = 0 ; i< n ; i++){
+			if(arr[i] % 2 == 0){
+				if(arr[i]> max){
+					max = arr[i];
+				}
+			}
+		}
+		return max;
 
-===========
-1. to find the index at which an element should be inserted in a sorted array such that it 
-remain sorted
-2. Max number in the right side of an array.
-3. Find the square root of a number using binary search
-4. Find whether a number is prime or not in square root of n complexity
+	}
+}
+
