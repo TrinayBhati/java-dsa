@@ -371,25 +371,114 @@
 // }
 
 
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {1,2,3,5,2,7,8,9,112};
+// 		System.out.println(maxMin(arr));
+// 	}
+// 	public static int maxMin(int[] arr){
+// 		int n = arr.length;
+// 		int max = Integer.MIN_VALUE;
+// 		int min = Integer.MAX_VALUE;
+
+// 		for(int i = 0 ; i< n ; i++){
+// 			if(arr[i] % 2 == 0){
+// 				if(arr[i]> max){
+// 					max = arr[i];
+// 				}
+// 			}
+// 		}
+// 		return max;
+
+// 	}
+// }
+
+// ============================== 9 -oct ===================================
+
+//using HashMap
+
+// class twoSum{
+// 	public static void main(String[] args) {
+// 		int nums[] = {2,7,11,15};
+// 		int target = 9;
+// 		twoSum(nums, target);
+// 	}
+// 	public static void twoSum(int[] nums, int target) {
+// 		int n = nums.length;
+// 		int arr[] = new int[2];
+// 		int index1 = -1;
+// 		int index2 = -1;
+
+// 		Hashmap<Integer, Integer> myMap = new HashMap<>();
+
+// 		for(int i = 0 ; i< n ; i++){
+// 			myMap.put(nums[i] , i);
+// 		}
+
+// 		for(int i = 0 ; i< n ; i++){
+// 			int diff = target - nums[i];
+// 			if(myMap.containsKey(diff) && i != myMap.get(diff)){
+// 				index1 = i;
+// 				index2 = myMap.get(diff);
+// 			}
+// 		}
+// 		arr[0] = index1;
+// 		arr[1] = index2;
+// 		return arr;
+// 	}
+// }
+
+
+// remove duplicate
+
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {0,0,1,1,1,2,2,3,3,4};
+// 		removeDuplicate(arr);
+// 	}
+// 	public static void removeDuplicate(int arr[]) {
+
+// 		int n = arr.length;
+// 		int j = 1;
+// 		int brr[] = new int[n]; 
+
+// 		for(int i = 0; i< n-1 ; i++){
+// 			if(arr[i] != arr[i+1]){
+// 				brr[j] = arr[i+1];
+// 				j++;
+// 			}
+// 		}
+// 		System.out.println(j);
+// 		for(int i = 0 ; i< brr.length ; i++){
+// 		System.out.print(brr[i]);
+
+// 		}
+// 	}
+// }
+
+
+// remove
+
 class Solution{
 	public static void main(String[] args) {
-		int arr[] = {1,2,3,5,2,7,8,9,112};
-		System.out.println(maxMin(arr))
+		int arr[] = {3,2,2,3};
+		removeElement(arr, 3);
 	}
-	public static int maxMin(int[] arr){
+	public static void removeElement(int arr[], int val) {
+
 		int n = arr.length;
-		int max = Integer.MIN_VALUE;
-		int min = Integer.MAX_VALUE;
+		int j = 1;
+		int brr[] = new int[n]; 
 
 		for(int i = 0 ; i< n ; i++){
-			if(arr[i] % 2 == 0){
-				if(arr[i]> max){
-					max = arr[i];
-				}
+			if(arr[i] != val){
+				brr[j] = arr[i];
+				j++;
 			}
 		}
-		return max;
-
+		for(int i = 0 ; i< brr.length ; i++){
+			System.out.print(brr[i]);
+		}
 	}
 }
 
