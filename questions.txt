@@ -128,3 +128,161 @@ Valid Palindrome
 Longest Palindromic Substring
 Palindromic Substrings
 Encode and Decode Strings (Leetcode Premium)
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+============================================
+
+//Problem 2: Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result
+// must appear as many times as it shows in both arrays and you may return the result in any order.
+//Input: nums1 = [1,2,2,1], nums2 = [2,2]
+//Output: [2,2]
+//Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+//Output: [4,9] or [9,4]
+
+=======================================
+
+how http or https works how a request in search bar in browser gets processed
+
+what is tcp and udp
+
+why js  is weekly typed language
+
+advantages of react over js
+
+difference in class based and function components
+
+=======================================
+
+1. 3 Sum
+2. Find only unique elements from these 2 arary .
+[ 1, 45, 5 ,7, 9 , 5]
+
+[ 2,1,5,6,1,9 ]
+Output: [2, 6, 7, 45]
+3. Given an array of integers arr[] of size N and an integer, the task is to rotate the array elements to the left by d positions.
+
+Examples:  
+
+Input: 
+arr[] = {1, 2, 3, 4, 5, 6, 7}, d = 2
+Output: 3 4 5 6 7 1 2
+4. Write a program to print the kth smallest element in array
+Input:
+N = 6
+arr[] = 7 10 4 3 20 15
+K = 3
+Output : 7
+5. Count Subarrays with LCM equals K
+6. Finding Pivot Integer
+7. Given a 2D array, print it in spiral form.
+8. Write an efficient program for printing K largest elements in an array. Elements in an array can be in any order. Print the elements in decreasing order 
+==============
+
+2. arr[]= {9,6,7,3,1,5} sort this array with the help of bubble sort.
+
+================
+1)
+
+-> Not Answered
+
+2) Write a program to sort an array
+->Not Answered
+
+3) Write a program to find whether the number is prime or not 
+-> Answered
+
+4) Mention some difference between linear search and Binary Search  (Answered)
+
+5) Explain about Hashing (Not Clear)
+
+======================
+1. 
+2. 
+
+======
+
+
+
+========================
+1- Advantages and Disadvantage of Array. 
+2- Linear Search VS Binary Search.
+Task 3 :- First and Last Position of an Element in a Sorted Array :- https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+Task 4:- Print Sum of Diagonals of a 2D matrix :- https://leetcode.com/problems/matrix-diagonal-sum/
+
+
+===============
+1) Explain about binary search
+-> answered
+
+2) Explain about linked list
+-> Answered
+
+3) print the min value in the stack when popping along with the popping element
+ex=> 
+input
+6
+8 5 3 1 2 3
+output
+3:1
+2:1
+1:1
+3:3
+5:5
+8:8
+
+-> Not Answered
+
+4) Given an array arr[] of non-negative integers and an integer sum, find a subarray that adds to a given sum.
+Note: There may be more than one subarray with sum as the given sum, print first such subarray. 
+Examples: 
+Input: arr[] = {1, 4, 20, 3, 10, 5}, sum = 33
+Output: Sum found between indexes 2 and 4
+Explanation: Sum of elements between indices 2 and 4 is 20 + 3 + 10 = 33
+
+-> Not Answered
+
+5) provide output for below code snippets
+*    int[] a=new int[5];
+	for(int i=0;i<a.length;i++)
+	{
+	  System.out.println(a[i]);
+	}
+-> Answered
+* System.out.print(""+1+1)
+-> Wrong Answered
+* System.out.print("1"+1+1)
+-> Wrongly Answered
+
+6) Explain about to implement queue using Stack
+-> Not Answered
+
+===========
+1. to find the index at which an element should be inserted in a sorted array such that it 
+remain sorted
+2. Max number in the right side of an array.
+3. Find the square root of a number using binary search
+4. Find whether a number is prime or not in square root of n complexity
