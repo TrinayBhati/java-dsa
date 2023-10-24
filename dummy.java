@@ -459,26 +459,200 @@
 
 // remove
 
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {3,2,2,3};
+// 		removeElement(arr, 3);
+// 	}
+// 	public static void removeElement(int arr[], int val) {
+
+// 		int n = arr.length;
+// 		int j = 1;
+// 		int brr[] = new int[n]; 
+
+// 		for(int i = 0 ; i< n ; i++){
+// 			if(arr[i] != val){
+// 				brr[j] = arr[i];
+// 				j++;
+// 			}
+// 		}
+// 		for(int i = 0 ; i< brr.length ; i++){
+// 			System.out.print(brr[i]);
+// 		}
+// 	}
+// }
+
+// ============================== 12 -oct ===================================
+
+
+// search insert
+
+
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {1,3,5,6};
+// 		insertPosition(arr, 7);
+// 	}
+// 	public static void insertPosition(int arr[], int val) {
+
+// 		int n = arr.length;
+// 		int ans = -1;
+// 		for(int i = 0 ; i< n ; i++){
+// 			if(arr[i] == val){
+// 				ans = i;
+// 			}else if(arr[i] < val){
+
+// 			}
+// 		}
+// 		System.out.print(ans);
+// 	}
+// }
+
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {1,3,5,6};
+// 		insertPosition(arr, 1);
+// 	}
+// 	public static void insertPosition(int arr[], int val) {
+
+// 		int n = arr.length;
+		
+// 		int f = 0;
+// 		int l = n-1;
+
+// 		int ans = -1;
+		
+// 		for(int i = 0 ; i< n ; i++){
+// 			int mid = f = (l-f)/2;
+
+// 			if(arr[mid] == val){
+// 				ans = mid;
+// 			}else if(arr[mid] < val){
+// 				f = mid+1;
+// 			}else if(arr[mid] > val){
+// 				l = mid-1;
+// 			}
+// 		}
+// 		System.out.print(ans);
+// 	}
+// }
+
+
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {1,3,5,6};
+// 		int result = insertPosition(arr, 5);
+// 		System.out.println(result);
+// 	}
+// 	public static int insertPosition(int arr[], int val) {
+
+// 		int n = arr.length;
+		
+// 		int f = 0;
+// 		int l = n-1;
+
+// 		int ans = -1;
+		
+// 		while(f<=l){
+// 			int mid = f = (l-f)/2;
+
+// 			if(arr[mid] == val){
+// 			return mid;
+// 			}else if(arr[mid] < val){
+// 				f = mid+1;
+// 			}else if(arr[mid] > val){
+// 				l = mid-1;
+// 			}
+// 		}
+// 		return f;
+// 	}
+// }
+
+
+// class Solution{
+// 	public static void main(String[] args) {
+// 		int arr[] = {1,2,3,0,0,0};
+// 		int brr[] = {2,5,6};
+// 		mergeSortedArray(arr, brr, arr.length, brr.length);
+// 	}
+// 	public static void mergeSortedArray(int arr[], int brr[], int m, int n) {
+
+// 		int i = 0;
+// 		int j = 0;
+
+// 		while(i < m && j < n){
+// 			if(arr[i] > brr[j]){
+// 				arr[i] = brr[j];
+// 				i++; j++;
+// 			}
+// 		}
+// 		for(int k = 0 ; k< m ; k++){
+// 			System.out.print(arr[k]);
+// 		}
+
+// 	}
+// }
+
+// ============================== 20 - oct ===================================
+
 class Solution{
 	public static void main(String[] args) {
-		int arr[] = {3,2,2,3};
-		removeElement(arr, 3);
-	}
-	public static void removeElement(int arr[], int val) {
+		int arr[] = {1,2,3,0,0,0};
+		int brr[] = {2,5,6};
+		mergeArray(arr, brr);
+	}	
+	public static void mergeArray(int arr[], int brr[]) {
+		
+		int m = arr.length;
+		int n = brr.length;
 
-		int n = arr.length;
-		int j = 1;
-		int brr[] = new int[n]; 
+		int i = 0;
+		int j = 0;
+		int k = 0;
 
-		for(int i = 0 ; i< n ; i++){
-			if(arr[i] != val){
-				brr[j] = arr[i];
-				j++;
+		int ans[] = new int[m+n];
+
+		while(i<m && j<n){
+			if( arr[i] < brr[j] || arr[i] == brr[j] ){
+				ans[k] = arr[i]; k++; i++;
+				ans[k] = brr[j]; k++ ; j++;
+			}else{
+				ans[k] = brr[j] ; k++; j++;
+				ans[k] = arr[i] ; i++; k++;
 			}
 		}
-		for(int i = 0 ; i< brr.length ; i++){
-			System.out.print(brr[i]);
+		for(int t = 0; t< m+n ; t++){
+			System.out.println(ans[t]);
 		}
 	}
 }
 
+//====================================================================
+
+class Solution{
+	public static void main(String[] args) {
+		int arr[] = {2,2,1};
+		majorityElement(arr);
+	}
+
+	public static void majorityElement(int arr[]){
+		int n = arr.length;
+
+		HashMap<Integer, Integer> myMap = new HashMap<Integer, Integer>();
+
+		for(int i = 0; i< n ; i++){
+			myMap.put(arr[i], i);
+		};
+
+		for(int j = 0; j<n ;j++){
+			int count = 0;
+			if(myMap.containsKey(arr[j])){
+				count++;
+			}
+			System.out.print(count);
+		}
+
+
+		
+	}
+}
